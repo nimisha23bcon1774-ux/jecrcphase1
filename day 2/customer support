@@ -1,0 +1,31 @@
+//Problem 8
+//customer support IVR system
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int choice;
+    cin >> choice;
+    
+    switch(choice)
+    {
+        case 1:
+        cout << "Transferring call to the customer support..";
+        
+        case 2:
+        cout << "Transferring call to billing and accounts..";
+        
+        case 3:
+        cout << "Connecting to technical help desk";
+        
+        case 4:
+        cout << "Connecting call to the agent";
+         break;
+        default:
+        cout << "Invalid selection, Enter a valid number..";
+        
+    }
+    return 0;
+}
