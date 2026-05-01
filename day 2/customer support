@@ -13,13 +13,13 @@ int main()
     {
         case 1:
         cout << "Transferring call to the customer support..";
-        
+        break;
         case 2:
         cout << "Transferring call to billing and accounts..";
-        
+        break;
         case 3:
         cout << "Connecting to technical help desk";
-        
+        break;
         case 4:
         cout << "Connecting call to the agent";
          break;
