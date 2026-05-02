@@ -1,0 +1,16 @@
+//PROBLEM 10 - smartphone unlock
+//try to unlock the phone until correct password
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int password;
+    do{
+        cout << "enter the password";
+        cin >> password;
+    }
+   while(password != 1234);
+  cout<<"phone unlocked";
+  return 0;
+    
