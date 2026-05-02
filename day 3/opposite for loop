@@ -1,0 +1,12 @@
+//PROBLEM 1- PRINT 10 TO 1 USING A "FOR" LOOP
+#include<iostream>
+using namespace std;
+
+int main()
+{ 
+    for (int i=10; i>=1;i-- )
+    {
+        cout<<i<<" ";
+    }
+    return 0;
+}
