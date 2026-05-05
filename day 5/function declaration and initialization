@@ -1,0 +1,14 @@
+//problem 2- function declaration and initilization
+#include<iostream>
+using namespace std;
+
+void printMessage()
+{
+    cout <<"Hi we are learning functions...";
+}
+
+int main()
+{
+  printMessage();
+  return 0;
+}
