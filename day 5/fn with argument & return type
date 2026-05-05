@@ -1,0 +1,16 @@
+//problem 3-- making a fn with argument and return type
+#include<iostream>
+using namespace std;
+int area(int a,int b)
+{
+    return a*b;
+}
+
+int main()
+{
+  int length = 10;
+  int width = 5;
+  area(length,width);
+  
+  cout << area;
+}
