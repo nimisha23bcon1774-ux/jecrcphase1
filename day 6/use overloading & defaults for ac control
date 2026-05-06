@@ -1,0 +1,12 @@
+//PROBLEM 05: SMART AC REMOTE
+#include <iostream>
+using namespace std;
+void setTemprature(int temp = 22){
+cout << "Temperature set to " << temp  << "°C" << "\n";
+ }
+void setTemprature(double temp){
+    cout << "Temperature set to " << temp  << "°C" << "\n";
+ }
+ void setTemprature(string mode) {
+    if(mode == "ECO") cout << "Temperature set to 24°C (ECO Mode)\n";
+    else if(mode == "TURBO") cout << "Temperature set to 18°C (TURBO Mode)\n"; }
