@@ -1,0 +1,5 @@
+// 4.1 -- No argument, No Return: void DoorBell(){ cout << "Ting Tong..."; }
+// 4.2 -- Argument, No Return: void sendText(string msg){ cout << msg; }
+// 4.3 -- No Argument, Return: int ticketNumber(){ return 101; }
+// 4.4 -- Argument, Return: int currencyConversion(int usd){ return usd / 100; }
+
