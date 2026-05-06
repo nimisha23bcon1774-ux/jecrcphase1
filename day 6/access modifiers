@@ -1,0 +1,18 @@
+//  PROBLEM 07: ACCESS MODIFIERS (PUBLIC) 
+// Task: Demonstrating 'public' access from main()
+#include <iostream>
+using namespace std;
+
+class PublicPark{
+public:
+    // Available to everyone outside the class
+    void enter() {
+        cout << "Anyone can enter in the park...";
+    }
+};
+
+int main() {
+    PublicPark p;
+    p.enter(); // Accessible because it is public
+    return 0;
+}
