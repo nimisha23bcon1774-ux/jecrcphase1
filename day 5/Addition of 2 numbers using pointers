@@ -1,0 +1,19 @@
+// PROBLEM 07: POINTER ARITHMETIC
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    cin >> a >> b;
+    
+    // Storing addresses in pointer variables
+    int *ptr1 = &a;
+    int *ptr2 = &b;
+    
+    // Dereferencing pointers to get values and calculate sum
+    int sum = *ptr1 + *ptr2;
+    
+    cout << "Sum using Pointers: " << sum << endl;
+    
+    return 0;
+}
