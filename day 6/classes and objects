@@ -1,0 +1,20 @@
+//PROBLEM 06: CLASSES & OBJECTS
+//Blueprint for a student and it's instances
+
+#include<iostream>
+using namespace std;
+class Student
+{
+ public:
+     string name;
+     int age;
+     void introduce()
+{cout << "Hi there, this person name is " << name << " and his age is " << age << "\n";
+}
+};
+int main()
+{
+ Student s1;
+ s1.name = "Abhishek"; s1.age = 24;
+ s1.introduce();
+}
