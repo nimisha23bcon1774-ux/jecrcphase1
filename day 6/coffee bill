@@ -1,0 +1,27 @@
+//Practice Problems
+
+#include <iostream>
+using namespace std;
+
+void applyDiscountByValue(float total){
+    total = total - 50; 
+}
+
+void applyDiscountByReference(float &total){
+    total = total - 50; 
+}
+
+int main() {
+    int coffeeQty;
+    float coffeePrice = 60; 
+    float total;
+
+    cout << "Enter number of coffees: ";
+    cin >> coffeeQty;
+
+    total = coffeeQty * coffeePrice;
+
+    cout << "\nOriginal Bill: ₹" << total << endl;
+
+    return 0;
+}
