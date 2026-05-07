@@ -1,0 +1,62 @@
+//PROBLEM 2 -- CONSTRUCTORS
+//TYPES --2.1 -- default
+//        2.2 -- PARAMETRISED
+//        2.3 -- copy
+
+
+// 2.1 -- DEFAULT CONSTRUCTOR
+#include <iostream>
+using namespace std;
+
+class wificonnection {
+public:
+    string networkName;
+    string password;
+    
+    wificonnection()
+    {
+        networkName="ACTFibre";
+        password= "BJP wons";
+    }
+    
+    public:
+    void showDetails()
+    {
+        cout << "Network name is "<< networkName << "and its password is"<< password;
+        
+    }
+};
+
+int main()
+{
+  wificonnection obj1;
+  obj1.showDetails();
+}
+
+//2.2 -- PARAMETRISED CONSTRUCTOR
+ #include<iostream>
+ using namespace std;
+class Student 
+{
+    public:
+        string name;
+        int id;
+        
+        Student(string studentName, int studentID)
+        {
+            name = studentName;
+            id = studentID;
+        }
+        
+        public:
+        void displayDetails()
+        {
+            cout << name << " "<<id;
+        }
+};
+
+int main()
+{
+    Student std1("Nimisha", 103);
+    std1.displayDetails();
+}
