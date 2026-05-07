@@ -1,0 +1,68 @@
+//PUBLIC
+
+#include <iostream>
+using namespace std;
+
+class Car {
+public:
+    string brand = "Ford"; 
+};
+
+int main() {
+    Car myObj;
+    cout << "Brand: " << myObj.brand << endl; 
+    return 0;
+}
+
+
+//PRIVATE
+
+#include <iostream>
+using namespace std;
+
+class Employee {
+private:
+    int salary; // Private attribute
+
+public:
+    // Setter method to access private data safely
+    void setSalary(int s) {
+        salary = s;
+    }
+    int getSalary() {
+        return salary;
+    }
+};
+
+int main() {
+    Employee myObj;
+    myObj.setSalary(50000);
+    // cout << myObj.salary; // This would cause an ERROR
+    cout << "Salary: " << myObj.getSalary() << endl;
+    return 0;
+}
+
+//PROTECTED
+
+#include <iostream>
+using namespace std;
+
+class Parent {
+protected:
+    int secretID = 12345; 
+};
+
+// Derived class
+class Child : public Parent {
+public:
+    void displayID() {
+       
+        cout << "Secret ID: " << secretID << endl;
+    }
+};
+
+int main() {
+    Child myObj;
+    myObj.displayID();
+    return 0;
+}
