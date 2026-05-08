@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+class bankAccount
+{
+    private:
+        int balance;
+    
+    public:
+    void setbalance(int amount)
+    {
+        if (amount>=0)
+        {
+            balance=amount;
+        }
+        else
+        {
+            cout << "ERROR";
+        }
+    }
+    int getbalance()
+    {
+        return balance;
+    }
+};
