@@ -1,0 +1,118 @@
+//PROBLEM 2 -- POLYMORPHISM
+//POLYMORPHISM MEANS ONE NAME BUT MANY FORMS
+//SAME FUNCTION BEHAVES DIFFERENTLY DEPENDING ON THE TYPE OF THE OBJECT IT CALLED
+//TWO TYPES
+//COMPILE TIME POLYMORPHISM -- FUNCTION OVERLOADING -- static
+//RESOLVED AT COMPILE TIME 
+//FUNCTION OVERLOADS -- SAME FUNCTION NAME, BUT DIFFERENT PARAMETERS
+
+
+//TYPES OF POLYMORPHISM--2.1 
+//FUNCTION OVERLOADING
+
+#include<iostream>
+using namespace std;
+
+class Addition
+{
+    public:
+    void add(int a,int b)
+ {
+     cout<< a+b << "\n";
+ }
+    public:
+    void add(int a, int b, int c)
+  
+ {
+    cout<< a+b+c << "\n";
+ }
+
+ void add(double a, double b)
+ {
+    cout<< a+b<<"\n";
+ }
+};
+
+int main()
+{
+   Addition a;
+   a.add(5,2);
+   a.add(5,2,3);
+   a.add(5.2,3.2);
+}
+
+
+
+//TYPES OF POLYMORPHISM--2.2 
+//FUNCTION OVERRIDING
+
+#include<iostream>
+using namespace std;
+
+class animal
+{
+    public:
+        virtual void sound()
+        {
+            cout << "animal makes sound";
+        }
+};
+
+class dog : public animal
+{
+    public:
+         void sound()
+         {
+             cout << "dog makes a sound"<< "\n";
+         }
+};
+
+class Cat : public animal
+{
+    public:
+         void sound()
+         {
+             cout << "cat makes a sound";
+         }
+};
+
+int main()
+{
+    dog d;
+    Cat c;
+    d.sound();
+    c.sound();
+}
+
+
+//example  2
+
+#include<iostream>
+using namespace std;
+
+class Parent
+{
+    public:
+        virtual void sum(int a, int b)
+        {
+            cout << a+b<<"parent";
+        }
+};
+
+class child : public Parent
+{
+    public:
+         void sum(int a, int b)
+         {
+             cout << a+b  << " \n child";
+         }
+};
+
+
+
+int main()
+{
+    
+    child c;
+    c.sum(10,20);
+}
