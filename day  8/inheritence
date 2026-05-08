@@ -27,3 +27,128 @@ int main()
     obj1.start();
 }
 
+
+
+
+
+//multilevel inheritance
+#include<iostream>
+using namespace std;
+
+class Vehicle
+{
+    public:
+          void start()
+         {
+            cout << "Vehicle starts"<< "\n"; 
+         }
+};
+
+class car : public Vehicle
+{
+    public:
+          void drive()
+          {
+              cout << "car is running"<< "\n";
+          }
+};
+
+class speedometer : public car
+{
+    public:
+         void speed()
+         {
+             cout << "car is running at 60kmph"<< "\n";
+         }
+};
+
+int main()
+{
+    speedometer obj1;
+    obj1.speed();
+    obj1.drive();
+    obj1.start();
+}
+
+
+
+//hierarchial inheritance
+#include<iostream>
+using namespace std;
+
+class Vehicle
+{
+    public:
+          void start()
+         {
+            cout << "Vehicle starts"<< "\n"; 
+         }
+};
+
+class car : public Vehicle
+{
+    public:
+          void drive()
+          {
+              cout << "car is running"<< "\n";
+          }
+};
+
+class bike : public Vehicle
+{
+    public:
+         void ride()
+         {
+             cout << "bike is running "<< "\n";
+         }
+};
+
+int main()
+{
+    car obj1;
+    bike obj2;
+    
+    obj2.ride();
+    obj2.start();
+    
+    obj1.start();
+    obj1.drive();
+    
+}
+
+
+
+//multiple inheritance
+#include<iostream>
+using namespace std;
+
+class Parent1
+{
+    public:
+          void giveMeMoney()
+         {
+            cout << "Mummy paisa do mujhe"<< "\n"; 
+         }
+};
+
+class Parent2
+{
+    public:
+          void giveMeMoney()
+          {
+              cout << "Papa paisa do mujhe"<< "\n";
+          }
+};
+
+class child : public Parent1, public Parent2
+{
+    //NO LOGIC
+};
+
+int main()
+{
+    child obj1;
+    //obj1.giveMeMoney();
+    obj1.Parent1 :: giveMeMoney();
+    obj1.Parent2 :: giveMeMoney();
+}
