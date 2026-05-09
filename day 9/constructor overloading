@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+//problem -- 2 
+//constructor overloading
+
+class Rectangle 
+{
+    public:
+         int length;
+         int width;
+         
+         Rectangle()
+         {
+             length = 1;
+             width = 1;
+         }
+         Rectangle(int side)
+         {
+            length = side;
+            width = side;
+         }
+         Rectangle(int side1,int side2)
+         {
+             length = side1;
+             width = side2;
+         }
+         
+         void showarea()
+         {
+             cout << length*width << "\n";
+         }
+};
+
+int main()
+{
+  Rectangle r;
+  Rectangle r1(5);
+  Rectangle r2(5,4);
+  
+  r.showarea();
+  r1.showarea();
+  r2.showarea();
+  
+}
