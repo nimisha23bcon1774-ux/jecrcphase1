@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+
+bool isPanlindrome(string str)
+{
+    int start = 0 ;
+    int end = str.size() -1;
+    
+    while(start<end)
+    {
+        if(str[start] != str[end])
+        {
+            return false;
+        }
+        start++;
+        end--;
+    }
+    return true;
+}
+
+int main()
+{
+    string str;
+    cout << "Enter a string...";
+    cin >> str;
+    
+    if(isPanlindrome(str))
+    {
+        cout << "Palindrome string";
+    }
+    else
+    {
+        cout << "Given string is not a palindrome...";
+    }
+    return 0;
+}
